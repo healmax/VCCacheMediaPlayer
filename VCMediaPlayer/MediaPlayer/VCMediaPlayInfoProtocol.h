@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol VCMediaPlayInfoProtocol <NSObject>
 
-//unique id
-@property (nonatomic, copy) NSString *mediaID;
 // media download URL
 @property (nonatomic, strong) NSURL *mediaURL;
 // media AlbumURL

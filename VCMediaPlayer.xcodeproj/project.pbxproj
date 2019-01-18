@@ -15,7 +15,6 @@
 		3F4DB73421E97E5E006F886C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4DB73321E97E5E006F886C /* main.m */; };
 		3F4DB73D21E97EAA006F886C /* VCMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4DB73C21E97EAA006F886C /* VCMediaPlayer.m */; };
 		3F4DB74021E97F1F006F886C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4DB73F21E97F1F006F886C /* AVFoundation.framework */; };
-		3F4DB74321E98651006F886C /* MediaPlayInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4DB74221E98651006F886C /* MediaPlayInfo.m */; };
 		3FBC524521ED760E00222F30 /* VCAssetResourceLoaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC524421ED760E00222F30 /* VCAssetResourceLoaderHandler.m */; };
 		3FBC524821ED88E500222F30 /* VCMediaDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC524721ED88E500222F30 /* VCMediaDownloadManager.m */; };
 		3FBC525321EF630F00222F30 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC524B21EF630F00222F30 /* 8.jpg */; };
@@ -26,9 +25,9 @@
 		3FBC525821EF630F00222F30 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC525021EF630F00222F30 /* 3.jpg */; };
 		3FBC525921EF630F00222F30 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC525121EF630F00222F30 /* 2.jpg */; };
 		3FBC525A21EF630F00222F30 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FBC525221EF630F00222F30 /* 1.jpg */; };
-		3FBC526121EF6DC100222F30 /* PlayInfoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC526021EF6DC100222F30 /* PlayInfoFactory.m */; };
-		3FBC526721F0C92E00222F30 /* DownloadFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC526621F0C92E00222F30 /* DownloadFileHandle.m */; };
 		3FBC526A21F1A2C600222F30 /* VCFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC526921F1A2C600222F30 /* VCFileHandle.m */; };
+		3FBC526F21F1B75A00222F30 /* DownloadFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC526C21F1B75A00222F30 /* DownloadFileHandle.m */; };
+		3FBC527021F1B75A00222F30 /* MediaPlayInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC526E21F1B75A00222F30 /* MediaPlayInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +44,6 @@
 		3F4DB73B21E97EAA006F886C /* VCMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCMediaPlayer.h; sourceTree = "<group>"; };
 		3F4DB73C21E97EAA006F886C /* VCMediaPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCMediaPlayer.m; sourceTree = "<group>"; };
 		3F4DB73F21E97F1F006F886C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3F4DB74121E98651006F886C /* MediaPlayInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MediaPlayInfo.h; path = MediaPlayer/MediaPlayInfo.h; sourceTree = "<group>"; };
-		3F4DB74221E98651006F886C /* MediaPlayInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MediaPlayInfo.m; path = MediaPlayer/MediaPlayInfo.m; sourceTree = "<group>"; };
 		3FBC524321ED760E00222F30 /* VCAssetResourceLoaderHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCAssetResourceLoaderHandler.h; sourceTree = "<group>"; };
 		3FBC524421ED760E00222F30 /* VCAssetResourceLoaderHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCAssetResourceLoaderHandler.m; sourceTree = "<group>"; };
 		3FBC524621ED88E500222F30 /* VCMediaDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCMediaDownloadManager.h; sourceTree = "<group>"; };
@@ -60,12 +57,12 @@
 		3FBC525021EF630F00222F30 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		3FBC525121EF630F00222F30 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		3FBC525221EF630F00222F30 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		3FBC525F21EF6DC100222F30 /* PlayInfoFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayInfoFactory.h; sourceTree = "<group>"; };
-		3FBC526021EF6DC100222F30 /* PlayInfoFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayInfoFactory.m; sourceTree = "<group>"; };
-		3FBC526521F0C92E00222F30 /* DownloadFileHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DownloadFileHandle.h; path = MediaPlayer/DownloadFileHandle.h; sourceTree = "<group>"; };
-		3FBC526621F0C92E00222F30 /* DownloadFileHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DownloadFileHandle.m; path = MediaPlayer/DownloadFileHandle.m; sourceTree = "<group>"; };
 		3FBC526821F1A2C600222F30 /* VCFileHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCFileHandle.h; sourceTree = "<group>"; };
 		3FBC526921F1A2C600222F30 /* VCFileHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCFileHandle.m; sourceTree = "<group>"; };
+		3FBC526B21F1B75A00222F30 /* DownloadFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFileHandle.h; sourceTree = "<group>"; };
+		3FBC526C21F1B75A00222F30 /* DownloadFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFileHandle.m; sourceTree = "<group>"; };
+		3FBC526D21F1B75A00222F30 /* MediaPlayInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPlayInfo.h; sourceTree = "<group>"; };
+		3FBC526E21F1B75A00222F30 /* MediaPlayInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPlayInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +103,15 @@
 				3F4DB72521E97E5B006F886C /* AppDelegate.m */,
 				3F4DB72721E97E5B006F886C /* ViewController.h */,
 				3F4DB72821E97E5B006F886C /* ViewController.m */,
-				3F4DB74121E98651006F886C /* MediaPlayInfo.h */,
-				3F4DB74221E98651006F886C /* MediaPlayInfo.m */,
-				3FBC526521F0C92E00222F30 /* DownloadFileHandle.h */,
-				3FBC526621F0C92E00222F30 /* DownloadFileHandle.m */,
 				3F4DB72A21E97E5B006F886C /* Main.storyboard */,
 				3F4DB72D21E97E5E006F886C /* Assets.xcassets */,
 				3F4DB72F21E97E5E006F886C /* LaunchScreen.storyboard */,
 				3F4DB73221E97E5E006F886C /* Info.plist */,
 				3F4DB73321E97E5E006F886C /* main.m */,
-				3FBC525F21EF6DC100222F30 /* PlayInfoFactory.h */,
-				3FBC526021EF6DC100222F30 /* PlayInfoFactory.m */,
+				3FBC526B21F1B75A00222F30 /* DownloadFileHandle.h */,
+				3FBC526C21F1B75A00222F30 /* DownloadFileHandle.m */,
+				3FBC526D21F1B75A00222F30 /* MediaPlayInfo.h */,
+				3FBC526E21F1B75A00222F30 /* MediaPlayInfo.m */,
 			);
 			path = VCMediaPlayer;
 			sourceTree = "<group>";
@@ -239,15 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4DB73D21E97EAA006F886C /* VCMediaPlayer.m in Sources */,
-				3FBC526721F0C92E00222F30 /* DownloadFileHandle.m in Sources */,
 				3FBC524821ED88E500222F30 /* VCMediaDownloadManager.m in Sources */,
+				3FBC526F21F1B75A00222F30 /* DownloadFileHandle.m in Sources */,
 				3FBC524521ED760E00222F30 /* VCAssetResourceLoaderHandler.m in Sources */,
 				3F4DB72921E97E5B006F886C /* ViewController.m in Sources */,
 				3F4DB73421E97E5E006F886C /* main.m in Sources */,
 				3F4DB72621E97E5B006F886C /* AppDelegate.m in Sources */,
-				3FBC526121EF6DC100222F30 /* PlayInfoFactory.m in Sources */,
+				3FBC527021F1B75A00222F30 /* MediaPlayInfo.m in Sources */,
 				3FBC526A21F1A2C600222F30 /* VCFileHandle.m in Sources */,
-				3F4DB74321E98651006F886C /* MediaPlayInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

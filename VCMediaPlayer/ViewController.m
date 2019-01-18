@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "VCMediaPlayer.h"
 #import "MediaPlayInfo.h"
-#import "PlayInfoFactory.h"
 
 #import <AVFoundation/AVFoundation.h>
 
@@ -142,7 +141,27 @@
 }
 
 - (NSArray<MediaPlayInfo *> *)playInfos {
-    return [PlayInfoFactory fakeDatas];
+    return @[[[MediaPlayInfo alloc] initWithURLString:@"http://download.lingyongqian.cn/music/ForElise.mp3"
+                                                 name:@"Song2"
+                                            imageName:@"2"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/2559.mp3"
+                                                 name:@"Song3"
+                                            imageName:@"3"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/1455.mp3"
+                                                 name:@"Song4"
+                                            imageName:@"4"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/2537.mp3"
+                                                 name:@"Song5"
+                                            imageName:@"5"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/3924.mp3"
+                                                 name:@"Song6"
+                                            imageName:@"6"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/3906.mp3"
+                                                 name:@"Song7"
+                                            imageName:@"7"],
+             [[MediaPlayInfo alloc] initWithURLString:@"http://www.noiseaddicts.com/samples_1w72b820/3907.mp3"
+                                                 name:@"Song8"
+                                            imageName:@"8"]];
 }
 
 @end

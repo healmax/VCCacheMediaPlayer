@@ -24,7 +24,6 @@
 @synthesize mediaName;
 @synthesize cacheMediaDownloadPath;
 @synthesize tempMediaDownloadPath;
-@synthesize mediaID;
 
 - (instancetype)initWithURLString:(NSString *)URLString name:(NSString *)name imageName:(NSString *)imageName {
     if (self = [super init]) {
@@ -46,17 +45,17 @@
     return [[NSBundle mainBundle] URLForResource:self.imageName withExtension:@".jpg"];
 }
 
-- (NSString *)mediaID {
+- (NSString *)mediaName {
     NSString *extension = [self.mediaURL pathExtension];
     return [NSString stringWithFormat:@"%@.%@", self.name, extension];
 }
 
 - (NSString *)cacheMediaDownloadPath {
-    return VCCacheMediaFilePath(self.mediaID);
+    return VCCacheMediaFilePath(self.mediaName);
 }
 
 - (NSString *)tempMediaDownloadPath {
-    return VCTempMediaDownloadPathWithName(self.mediaID);
+    return VCTempMediaDownloadPathWithName(self.mediaName);
 }
 
 @end

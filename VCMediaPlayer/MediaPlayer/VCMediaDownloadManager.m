@@ -26,22 +26,9 @@ static CGFloat const kMaximumBufferMBSize = 2.f;
 @property (nonatomic, assign, readwrite) NSUInteger downloadedDataLength;
 @property (nonatomic, assign, readwrite) NSUInteger dataOffset;
 
-//@property (nonatomic, copy) NSString *tempMediaDownloadPath;
-//@property (nonatomic, copy) NSString *cacheMediaDownloadPath;
-
 @end
 
 @implementation VCMediaDownloadManager
-
-//+ (void)initialize {
-//    BOOL isDir = NO;
-//    NSString *folderPath = self.mediaInfo.cach;
-//
-//    [[NSFileManager defaultManager] fileExistsAtPath:folderPath isDirectory:&isDir];
-//    if (!isDir) {
-//        [[NSFileManager defaultManager] createDirectoryAtPath:folderPath withIntermediateDirectories:YES attributes:nil error:nil];
-//    }
-//}
 
 - (instancetype)initWithMediaInfo:(id<VCMediaPlayInfoProtocol>)mediaInfo {
     if (self = [super init]) {
@@ -187,15 +174,5 @@ static CGFloat const kMaximumBufferMBSize = 2.f;
 - (NSUInteger)remainingDataLength {
     return self.mediaData.length;
 }
-
-//- (NSString *)tempMediaDownloadPath {
-//    NSString *name = [self.downloadURL.absoluteString componentsSeparatedByString:@"/"].lastObject;
-//    return VCTempMediaDownloadPathWithName(name);
-//}
-//
-//- (NSString *)cacheMediaDownloadPath {
-//    NSString *name = [self.downloadURL.absoluteString componentsSeparatedByString:@"/"].lastObject;
-//    return VCCacheMediaFilePath(name);
-//}
 
 @end

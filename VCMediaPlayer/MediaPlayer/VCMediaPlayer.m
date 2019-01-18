@@ -23,7 +23,6 @@ typedef NS_ENUM(NSInteger, VCMediaPlayerPlayStyle) {
 static NSString * const kPlayerItemLoadedTimeRanges = @"loadedTimeRanges";
 static NSString * const kPlayerItemSrBufferEmty = @"playbackBufferEmpty";
 static NSString * const kPlayerItemStatus = @"status";
-
 static NSString * const kPlayerRate = @"rate";
 
 @interface  VCMediaPlayer()<AVAssetResourceLoaderDelegate, NSURLSessionDataDelegate>
